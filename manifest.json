@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Now Playing Controller",
+    "version": "1.2",
+    "description": "Control and display the currently playing media.",
+    "permissions": ["activeTab", "storage", "tabs", "scripting"],
+    "host_permissions": ["<all_urls>"],
+"background": {
+  "service_worker": "background.js"
+},
+    "action": {
+        "default_title": "Now Playing"
+    },
+"content_scripts": [
+  {
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }
+],
+    "web_accessible_resources": [
+        {
+            "resources": ["now-playing.html"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}

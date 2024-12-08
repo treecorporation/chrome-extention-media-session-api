@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Now Playing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Now Playing</h1>
+    <div id="song-info">
+        <p><strong>Title:</strong> <span id="title">Loading...</span></p>
+        <p><strong>Artist:</strong> <span id="artist">Loading...</span></p>
+        <p><strong>Album:</strong> <span id="album">Loading...</span></p>
+    </div>
+    <div id="controls">
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+        <button id="volume-up">Volume Up</button>
+        <button id="volume-down">Volume Down</button>
+        <button id="seek-forward">+10s</button>
+        <button id="seek-backward">-10s</button>
+    </div>
+    <script src="now-playing.js"></script>
+</body>
+</html>
